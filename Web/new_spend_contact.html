@@ -6,11 +6,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <script src="js/holder.js"></script>
-    <a href="http://www.osceola.k12.fl.us/depts/Grant_Management/images/emoney_logo_000.gif"></a>
-  Spend Wise</h1>
-  </head>
+</head>
   
-<body background="http://hdwallpapersbackgrounds.com/wp-content/uploads/2012/11/Contact-us.jpg">
+<body background="http://backbonelocal.com/backbonewp/wp-content/uploads/2013/10/clouds-bg.jpg">
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
 	      <div class="container-fluid">
@@ -40,12 +38,12 @@
 </div>
 	<div class="jumbotron">
 		<b></b><center> 
-		<form name= "name" action="/submit" method="POST">	<center></center>	
-Name: <input type="text" class="form-control-sm">  Email: <input type="text" class="form-control-sm"><br><br>  
-<p>Your Message:</p>
-		<textarea rows="14" cols="70">
+		<form name= "name" action="http://localhost:5000/contact" method="POST"><center></center>	
+Name: <input type="text" class="form-control-sm" name="username">  Email: <input type="text" class="form-control-sm" name ="email"><br><br>  
+<p>Your Message:</p> 
+		<textarea rows="14" cols="70" name="user_message">
 		</textarea>
-		<br><a class="btn btn-primary btn-lg" role="button">Submit</a></p></br>
+		<br><button type="submit" class="btn btn-success">Submit</a></p></br>
 		</center>
 		</form></div><br>
 		 <br><br>

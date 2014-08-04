@@ -99,7 +99,7 @@
 		   <div class="row">
 			<div class="col-sm-offset-2 col-sm-4">
 					<br><br><br><br>
-					<b class="lead">"Begin By Entering The Amount Of <b> Money You Have With You!!! "
+					<b class="lead"><h1>"Money in your pocket"
 			</div>
 		</div>
 </div>
@@ -111,8 +111,12 @@
   	<div class="row">
   		<div class="col-sm-offset-4 col-sm-4">
 	  	<div class="jumbotron"</div>
-    <input type="number" id="replyNumber" data-bind="value:replyNumber" />
-        <a href="Spend_wise_b.html" class="btn btn-default" type="button">Go!</button>
+
+    <form action="http://localhost:5000/2page_wise" method="POST"><center>Enter Amount</center>
+    	<input type="number" data-bind="value:replyNumber" name ='amount'/>
+        <button class="btn btn-default" type="sumbit" >Go!</button>
+    </form>
+
 </div>
 
 	      

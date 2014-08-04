@@ -39,20 +39,24 @@
   <div class= "container-fluid">
   	<div class="row">
 	<div class="col-sm-12">
-		<form class="form-horizontal" role="form">
-	    <div class="form-group">
+<form action="http://localhost:5000/1page_wise" method="POST">	   
+		    <div class="form-group">
 	    	<div class="col-sm-6">
-		    <label for="text">Name</label>
-		    <input type="text" class="form-control" id="Name" placeholder="example: John Johnson"><br><br>
+		    <label type="text">Name</label>
+		    <input type="text" class="form-control" name='your_name' placeholder="example: John Johnson"><br><br>
 		    <label for="text">Birth</label>
-		    <input type="int" class="form-control" id="Class" placeholder="example: 1/10/97"><br><br>
+		    <input type="int" class="form-control" name="the_birth" placeholder="example: 1/10/97"><br><br>
 		    <label for="select">INTREST</label>
-		    <select class="form-control">
-			    <option>LOVE</option>
-			    <option>SPORTS</option>
-			    <option>CLOTH</option>
-			    <option>SHOES</option>
+		    <select class="form-control" name ='interest'>
+			    <option value ='LOVE'>LOVE</option>
+			    <option value = 'SPORTS'>SPORTS</option>
+			    <option value = 'CLOTH'>CLOTH</option>
+			    <option value ='SHOES'>SHOES</option>
 			    </select>
+			    <div class="page-header">
+  <h1>Nice, Were almost there! <br>
+        <img data-src="holder.js/100%x180" alt="...">
+		<button type="submit" class="btn btn-success">Submit</button>
 			
 			</div>
 			</div>
@@ -60,13 +64,7 @@
 			</div>
 			</div>
 			</form>
-			<div class= "container-fluid"> 
-  	<div class="row">
-  		<div class="container">
-	  	<div class="jumbotron"</div>
-			<h1>Spend Less, Save More</h1>
-			<a href="Spend_Wise_a.html"><button type="button" class="btn btn-lg btn-warning"><h2>Start Wise</h2></button></a><br><br>
-				</div>
+  
 	     
 	      
 	         <!-- JavaScript plugins (requires jQuery) -->
