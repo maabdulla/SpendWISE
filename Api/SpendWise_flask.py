@@ -16,6 +16,11 @@ def Submit():
 	json_text = {'name': user_name, 'email': email_address, 'user_message': user_message}
 
 	final_json = json.dumps(json_text)
+	
+	fo = open('Output_json_info.txt','a+')
+	fo.write(final_json)
+	fo.write('\n')
+	fo.close()
 	return final_json
 
 
@@ -33,8 +38,13 @@ def Submit1():
 	json_text = {'the_birth': user_message, 'your_name': email_address, 'interest': interest_}
 
 	final_json = json.dumps(json_text)
-	return final_json
+	
 
+	fo = open('Output_json_info.txt','a+')
+	fo.write(final_json)
+	fo.write('\n')
+	fo.close()
+	return final_json
 
 #
 #
@@ -44,10 +54,14 @@ def Submit2():
 
  
 	json_text = {'amount': money}
-
 	final_json = json.dumps(json_text)
-	return final_json
+	
 
+	fo = open('Output_json_info.txt','a+')
+	fo.write(final_json)
+	fo.write('\n')
+	fo.close()
+	return final_json
 
 
 
